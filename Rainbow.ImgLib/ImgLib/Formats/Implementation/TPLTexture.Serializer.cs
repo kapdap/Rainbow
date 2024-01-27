@@ -174,7 +174,6 @@ namespace Rainbow.ImgLib.Formats.Implementation
                         break;
                     case 0xA: //C14X2
                         throw new TextureFormatException("C14X2 not implemented yet!");
-                        break;
                     case 0xE: //DXT1 (aka CMPR)
                         colorCodec = new ColorCodecDXT1Gamecube(width, height);
                         imgDataSize = colorCodec.GetBytesNeededForEncode(width, height);
